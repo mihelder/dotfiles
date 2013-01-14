@@ -1,6 +1,6 @@
 "-------------------------------------------------------------------------
 " File: $HOME/.vimrc
-" Author: Mike Helderman <mike.helderman@gmail.com>
+" Author: Mike Helderman
 "-------------------------------------------------------------------------
 
 call pathogen#runtime_append_all_bundles()
