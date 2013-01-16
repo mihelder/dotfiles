@@ -3,7 +3,7 @@ Dotfiles
 
 These are my dotfiles. I've put them on github for easy distribution on different (Ubuntu) machines.
 
-The files should be cloned to your homedirectory (~/dotfiles). The included setup script (_initialize.sh) will copy existing dotfiles to a backup directory (~/dotfiles_org), and create symlinks to the corresponding files in ~/dotfiles.
+The files should be cloned to your homedirectory (~/dotfiles). The included setup script (_initialize.sh) will copy existing dotfiles to a backup directory (~/dotfiles_org), and create symlinks to the corresponding files in ~/dotfiles. You can (re)run _initialize.sh anytime (for instance, after you've added an extra dotfile to ~/dotfiles yourself), as it will skip already created symlinks.
 
 Installation
 ------------
