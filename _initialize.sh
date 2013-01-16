@@ -21,7 +21,7 @@ if ! [ -d $orgfiles_dir ]; then
 	echo "$orgfiles_dir created for backup of existing dotfiles"
 fi
 for file in $files_tomove; do
-	if [[ $file != $this_file ]]; then
+	if [[ $file != $this_file ]] && [[ $file != 'README.md' ]]; then
 		if [ -L ~/.$file ]; then
 			echo "~/.$file is already a symlink: skipped"
 		else
