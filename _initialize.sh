@@ -23,7 +23,7 @@ fi
 for file in $files_tomove; do
 	if [[ $file != $this_file ]]; then
 		if [ -L ~/.$file ]; then
-            echo "~/.$file is already a symlink: skipped"
+			echo "~/.$file is already a symlink: skipped"
 		else
 			if [ -e ~/.$file ]; then
 				mv ~/.$file $orgfiles_dir/$file
