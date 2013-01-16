@@ -12,7 +12,7 @@
 
 this_file=`basename $0`
 dotfiles_dir=~/dotfiles
-orgfiles_dir=~/dotfiles_org
+orgfiles_dir=~/backup/dotfiles_org
 files_tomove=`ls $dotfiles_dir`
 
 echo
