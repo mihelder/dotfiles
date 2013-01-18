@@ -9,7 +9,7 @@ Installation
 ------------
 
 ``` bash
-git clone --recursive git://github.com/geenid/dotfiles ~/dotfiles
+git clone --recursive git://github.com/geenix/dotfiles ~/dotfiles
 cd ~/dotfiles
 ./_initialize.sh
 ```
