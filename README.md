@@ -16,6 +16,14 @@ cd ~/dotfiles
 
 Note that I installed vim plugins as git submodules, that's why you need the --recursive option. When you clone my dotfiles repo, all vim plugins are recursively cloned from their original contributors.
 
+Solarized
+---------
+
+I like to use the Solarized color theme. You might need to adjust some terminal settings first: 
+
+PuTTY: [putty-colors-solarized](https://github.com/altercation/solarized/tree/master/putty-colors-solarized)
+Ubuntu: [setup.ubuntu.solarize.sh](https://gist.github.com/1280177)
+
 Git and submodules
 ------------------
 
