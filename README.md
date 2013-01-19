@@ -21,8 +21,8 @@ Solarized
 
 I like to use the Solarized color theme. You might need to adjust some terminal settings first: 
 
-PuTTY: [putty-colors-solarized](https://github.com/altercation/solarized/tree/master/putty-colors-solarized)
-Ubuntu: [setup.ubuntu.solarize.sh](https://gist.github.com/1280177)
+* PuTTY: [putty-colors-solarized](https://github.com/altercation/solarized/tree/master/putty-colors-solarized)
+* Ubuntu: [setup.ubuntu.solarize.sh](https://gist.github.com/1280177)
 
 Git and submodules
 ------------------
