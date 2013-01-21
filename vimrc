@@ -94,6 +94,7 @@ let NERDTreeDirArrows=1
 " map buffer navigation to function keys
 map <F4> :bn<CR>
 map <F3> :bp<CR>
+set hidden
 
 " make html snippets available to php files as well
 au BufRead,BufNewFile *.php set ft=php.html
