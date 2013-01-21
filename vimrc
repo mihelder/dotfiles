@@ -90,6 +90,8 @@ filetype plugin indent on
 " toggle NERDTRee on or off via F2
 map <F2> :NERDTreeToggle<CR>
 let NERDTreeDirArrows=1
+let g:NERDTreeWinPos="right"
+let NERDTreeShowHidden=1
 
 " map buffer navigation to function keys
 map <F4> :bn<CR>
