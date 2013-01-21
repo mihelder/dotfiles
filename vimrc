@@ -93,9 +93,9 @@ filetype plugin on
 map <F2> :NERDTreeToggle<CR>
 let NERDTreeDirArrows=1
 
-" map tab navigation to function keys
-map <F4> :tabnext<CR>
-map <F3> :tabprev<CR>
+" map buffer navigation to function keys
+map <F4> :bn<CR>
+map <F3> :bp<CR>
 
 " make html snippets available to php files as well
 au BufRead,BufNewFile *.php set ft=php.html
