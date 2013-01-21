@@ -78,15 +78,13 @@ set tabstop=4
 set lbr
 set tw=500
 
-set ai "Auto indent
-set si "Smart indent
 set wrap "Wrap lines
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugin management
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+filetype plugin indent on
 
-filetype plugin on
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Shortcuts and plugin stuff
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " NERDTree
 " toggle NERDTRee on or off via F2
