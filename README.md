@@ -23,7 +23,7 @@ Installation
 ------------
 
 ``` bash
-git clone --recursive git://github.com/mihelder/dotfiles ~/dotfiles
+git clone --recursive git://github.com/nanu2/dotfiles ~/dotfiles
 cd ~/dotfiles
 ./_initialize.sh
 ```
