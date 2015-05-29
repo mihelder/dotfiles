@@ -71,11 +71,12 @@ prompt_command () {
         MAIN_COLOR=${GREEN}
     fi
     # only show current dir if pwd gets too big
-    if [ ${#PWD} -gt 18 ]
+    MY_PWD=${PWD/#$HOME/\~}
+    if [ ${#MY_PWD} -gt 18 ]
     then
-        MY_PWD=${PWD##*/}
+        MY_PWD=${MY_PWD##*/}
     else
-        MY_PWD=${PWD}
+        MY_PWD=${MY_PWD}
     fi
     # get virtual env (if any)
     if [[ $VIRTUAL_ENV != "" ]]; then
