@@ -51,7 +51,41 @@ export LESS_TERMCAP_ue=$'\E[0m'     # end underline
 export LESS_TERMCAP_us=$'\E[01;32m' # begin underline
 
 # colorized prompt with handy extra info
-PROMPT_COMMAND='PS1="\[\033[0;33m\][\!]\`if [[ \$? = "0" ]]; then echo "\\[\\033[32m\\]"; else echo "\\[\\033[31m\\]"; fi\`[\u.\h: \`if [[ `pwd|wc -c|tr -d " "` > 18 ]]; then echo "\\W"; else echo "\\w"; fi\`]\$\[\033[0m\] "; echo -ne "\033]0;`hostname -s`:`pwd`\007"'
+prompt_command () {
+    local EXIT="$?"
+    local GREEN="\[\033[0;32m\]"
+    local YELLOW="\[\033[0;33m\]"
+    local CYAN="\[\033[0;36m\]"
+    local BCYAN="\[\033[1;36m\]"
+    local BLUE="\[\033[0;34m\]"
+    local GRAY="\[\033[0;37m\]"
+    local DKGRAY="\[\033[1;30m\]"
+    local WHITE="\[\033[1;37m\]"
+    local RED="\[\033[0;31m\]"
+    # return color to terminal setting for text color
+    local DEFAULT="\[\033[0;39m\]"
+    # main prompt color
+    if [ $EXIT != 0 ]; then
+        MAIN_COLOR=${RED}
+    else
+        MAIN_COLOR=${GREEN}
+    fi
+    # only show current dir if pwd gets too big
+    if [ ${#PWD} -gt 18 ]
+    then
+        MY_PWD=${PWD##*/}
+    else
+        MY_PWD=${PWD}
+    fi
+    # get virtual env (if any)
+    if [[ $VIRTUAL_ENV != "" ]]; then
+        VENV="${BLUE}[${VIRTUAL_ENV##*/}]"
+    else
+        VENV=''
+    fi
+    export PS1="${VENV}${YELLOW}[\!]${MAIN_COLOR}${MAIN_PROMPT}[\u.\h: ${MY_PWD}]\$ ${DEFAULT}"
+}
+export PROMPT_COMMAND=prompt_command
 
 #---------------
 # Other settings
